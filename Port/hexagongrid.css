@@ -1,0 +1,56 @@
+
+.container1{
+    height: 500px;
+    aspect-ratio: 1;
+    display: grid;
+    grid-template: repeat(6, 1fr) / 1fr repeat(3, 2fr 1fr);
+    position: absolute;
+    /* we used absolute to make it stay at right but not fixed */
+    right: 0;
+}
+/* social media links */
+.social-media-icons {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-media-icons a {
+    display: block;
+}
+
+.social-media-icons img {
+    width: 40px;
+    margin: 10px;
+}
+/*  */
+
+
+
+.hexagons{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    scale: 0.9; /* To create some gap between all the hexagons */
+    opacity: 1; /* Ensure images are not opaque */
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.hexagons:hover{
+    scale: 1.1;
+}
+
+#hexagon1{grid-area: 1 / 3 / span 2 / span 3;}
+#hexagon2{grid-area: 2 / 5 / span 2 / span 3;}
+#hexagon3{grid-area: 4 / 5 / span 2 / span 3;}
+#hexagon4{grid-area: 5 / 3 / span 2 / span 3;}
+#hexagon5{grid-area: 4 / 1 / span 2 / span 3;}
+#hexagon6{grid-area: 2 / 1 / span 2 / span 3;}
+#hexagon7{grid-area: 3 / 3 / span 2 / span 3;}
