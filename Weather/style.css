@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #000000;
+
+}
+
+/*  */
+.card{
+    width:90%;
+    max-width: 470px;
+    background: linear-gradient(135deg,#000000,#022337);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align:center;
+}
+
+/*  */
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* input box looks */
+.search input{
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 60px;
+    background: #ffffff;
+    outline: none;
+    font-size: 16px;
+    
+    
+}
+
+
+
+/* search button looks */
+.search button{
+    width: 45px;
+    height: 45px;
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-left: 10px;
+    border-radius: 10%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.search button img{
+    width: 16px;
+}
+
+.search button:hover{
+    color: #00feba;
+}
+
+
+/* css for weather-icon */
+.weather-icon{
+    width: 170px;
+    margin-top: 30px ;
+}
+
+/* we have the title in h1 h2 */
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h1{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+/* details section */
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+/* added icons with the img tag */
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+/*  */
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+    
+}
