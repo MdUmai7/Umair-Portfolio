@@ -1,0 +1,75 @@
+
+
+/* Cards container styling */
+.cards_container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Individual card styling */
+.card {
+    background-color: rgba(255, 255, 255, 0); /* Fully opaque using percentage */
+    color: #fff;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+/* Heading styling */
+.card h1 {
+    font-size: 1.5rem;
+    color: #b36d0b;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Description styling */
+.desc {
+    padding-inline: 15px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+/* Button styling */
+.card button {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #fe8471;
+    color: white;
+}
+
+/* --------General Styling Above-------- */
+
+.card {
+    display: grid;
+    grid-template-rows: auto auto 20px auto;
+    justify-items: center;
+    gap: 10px;
+    transition: grid-template-rows 1s;
+}
+
+.desc {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card:hover {
+    grid-template-rows: auto auto auto auto;
+}
+
+.card:hover .desc {
+    white-space: normal;
+    overflow: visible;
+}
